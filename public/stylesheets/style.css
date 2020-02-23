@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  background-color: white;
+  font-family: 'Vollkorn';
+}
+
+a {
+  color: #00B7FF;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
