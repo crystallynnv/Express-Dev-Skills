@@ -20,7 +20,7 @@ function deleteOne(id) {
 
 function create(skill) {
     skills.push(skill);
-}
+};
 
 function getAll() {
     return skills;

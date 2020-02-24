@@ -15,7 +15,6 @@ function deleteSkill(req, res) {
 
 function create(req, res) {
     req.body.learned = false;
-    console.log(req.body);
     Skill.create(req.body);
     res.redirect('/skills');
 };
@@ -32,6 +31,7 @@ function index(req, res) {
 
 function show(req, res) {
     res.render('skills/show', {
-        skill: Skill.getOne(req.params.id)
+        skill: Skill.getOne(req.params.id),
+        idx: req.params.id
     })
 };
